@@ -1,0 +1,16 @@
+<h1>Stupid Coaching</h1>
+<p>Ask your coach anything:</p>
+
+<%= simple_form_for :answer, url: answer_path, method: :get do |f|%>
+  <div class="search-form-control form-group">
+    <input class="form-control string required" type="text" name="question" id="search_query" />
+    <button name="button" type="submit" class="btn btn-flat">
+      <i class="fas fa-search"></i> Ask
+    </button>
+  </div>
+<% end %>
+
+ <%# <form action="/answer" method="get">
+ <input type="text" name="question">
+<input type="submit" value="Ask!">
+</form> %>
